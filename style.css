@@ -120,6 +120,8 @@ img{
 .inforigth h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    background-color: red;
+    width: auto;
 }
  
 .socialMedia{
@@ -191,6 +193,10 @@ img{
         height: auto;
         background-image: url("images/bgp.jpg");
         justify-content: center;
+    }
+    .inforigth{
+        width: 80%;
+        text-align: center;
     }
 
 }
