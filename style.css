@@ -70,7 +70,7 @@ img{
     background: #1888ff;
     border-radius: 5px;
   }
-  @media screen and (max-width:800px) {
+  @media only screen and (max-width:800px) {
     .link{
         margin:0 3px;
         font-size: 15px;
@@ -80,11 +80,26 @@ img{
       width: 60px;
       height: auto;
     }
+    .detailprojet{
+        flex-direction: column;}
   }
-  @media screen and (max-width:623px) {
+  @media only screen and (max-width:623px) {
     .link{
       font-size: 13px;
   } 
+}
+  @media only screen and (max-width:700px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-image: url("images/bgp.jpg");
+        justify-content: center;
+    }
+    .inforigth{
+        width: 80%;
+        text-align: center;
+    } 
 }
   /* ################ fin Navbar ############### */
  
@@ -186,20 +201,8 @@ img{
     text-decoration: none;
 }
 
-@media screen and (max-width:700px) {
-    .header{
-        flex-direction: column;
-        height: auto;
-        background-image: url("images/bgp.jpg");
-        justify-content: center;
-    }
-    .inforigth{
-        width: 80%;
-        text-align: center;
-    }
 
-}
-@media screen and (max-width:1080px) {
+@media only screen and (max-width:1080px) {
     .header img{
         padding: 0 10px;
         margin: 120px 30px 0 100px;
@@ -213,7 +216,7 @@ img{
    
  }
 
- @media screen and (max-width:800px) {
+ @media only screen and (max-width:800px) {
    .header img{
        padding: 0px;
         flex: 1;
@@ -223,9 +226,12 @@ img{
     .inforigth{
         margin-right: 60px;
     }
+    .heaed{
+        margin-right: 60px;
+    }
  }
- @media screen and (max-width: 730px){
-   .header img{
+ @media only screen and (max-width: 730px){
+   .heaedr img{
        align-items: center;
         justify-content: center;
         margin-top: 10px;
@@ -309,7 +315,7 @@ img{
     color: yellow;
     margin-bottom: -30px;
 }
-@media screen and (max-width: 830px){
+@media only screen and (max-width: 830px){
     .abaoutcont{
         flex-direction:column;
     }
@@ -317,7 +323,7 @@ img{
         width: 100%;
     }
 }
-@media screen and (max-width: 530px){
+@media only screen and (max-width: 530px){
    
 }
   /* ################ fin Abaout ############### */
@@ -391,7 +397,7 @@ img{
     font-size: 30px;
     margin-top: -30px;
 }
-@media screen and (max-width: 830px){
+@media only screen and (max-width: 830px){
     .formation{
         width: 100%;
         
@@ -484,7 +490,7 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-@media screen and (max-width:823px) {
+@media only screen and (max-width:823px) {
     .itemcomp{
         flex-direction: column;}
 }
@@ -605,14 +611,14 @@ h2{
     height: auto;align-self: center;
     border-radius: 15px;
 }
-@media screen and (max-width:723px) {
+@media only screen and (max-width:723px) {
     .tech{
         grid-template-columns: repeat(2, 1fr);}
   
 }
-@media screen and (max-width:823px) {
- .detailprojet{
-     flex-direction: column;}
+@media only screen and (max-width:823px) {
+    .detailprojet{
+        flex-direction: column;}
     .descleft{
         width: 100%;
     }
